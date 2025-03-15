@@ -44,3 +44,14 @@ if st.button("Check Loan Approval"):
     st.subheader(f"Loan Status: {result}")
 
 st.write("📌 AI-driven decision-making for faster loan approvals.")
+
+# Create requirements.txt for dependencies
+requirements = """streamlit
+joblib
+numpy
+scikit-learn
+huggingface_hub
+"""
+
+with open("requirements.txt", "w") as f:
+    f.write(requirements)
